@@ -859,7 +859,7 @@ namespace Bit.Core.Services
             // Migrate environment data to use Regions
             foreach (var account in state.Accounts.Where(a => a.Value?.Profile?.UserId != null && a.Value?.Settings != null))
             {
-                var urls = account.Value.Settings.EnvironmentUrls ?? Region.US.GetUrls();
+                var urls = account.Value.Settings.EnvironmentUrls ?? Region.vBoxx.GetUrls();
                 account.Value.Settings.Region = urls.Region;
                 account.Value.Settings.EnvironmentUrls = urls.Region.GetUrls() ?? urls;
             }
@@ -867,7 +867,7 @@ namespace Bit.Core.Services
             await SetValueAsync(Storage.Prefs, Constants.StateKey, state);
 
             // Update pre auth urls and region
-            var preAuthUrls = await GetValueAsync<EnvironmentUrlData>(Storage.Prefs, V7Keys.PreAuthEnvironmentUrlsKey) ?? Region.US.GetUrls();
+            var preAuthUrls = await GetValueAsync<EnvironmentUrlData>(Storage.Prefs, V7Keys.PreAuthEnvironmentUrlsKey) ?? Region.vBoxx.GetUrls();
             await SetValueAsync(Storage.Prefs, V7Keys.RegionEnvironmentKey, preAuthUrls.Region);
             await SetValueAsync(Storage.Prefs, V7Keys.PreAuthEnvironmentUrlsKey, preAuthUrls.Region.GetUrls() ?? preAuthUrls);
 

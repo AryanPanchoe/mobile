@@ -54,10 +54,10 @@ namespace Bit.App.Pages
                     switch (Type.Value)
                     {
                         case SendType.Text:
-                            _icon = BitwardenIcons.FileText;
+                            _icon = VaultwardenIcons.FileText;
                             break;
                         case SendType.File:
-                            _icon = BitwardenIcons.File;
+                            _icon = VaultwardenIcons.File;
                             break;
                         default:
                             break;

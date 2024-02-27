@@ -69,7 +69,7 @@
                 LineBreakMode="TailTruncation" />
 
             <controls:IconLabel
-                Text="{Binding Source={x:Static core:BitwardenIcons.Clone}}"
+                Text="{Binding Source={x:Static core:VaultwardenIcons.Clone}}"
                 TextColor="Black"
                 HorizontalOptions="End"
                 VerticalOptions="Center"

@@ -9,10 +9,9 @@ namespace Bit.Core.Utilities
         {
             switch (region)
             {
-                case Region.US:
-                    return EnvironmentUrlData.DefaultUS;
-                case Region.EU:
-                    return EnvironmentUrlData.DefaultEU;
+                
+                case Region.vBoxx:
+                    return EnvironmentUrlData.DefaultvBoxx;
                 default:
                     return null;
             }
@@ -22,10 +21,9 @@ namespace Bit.Core.Utilities
         {
             switch (region)
             {
-                case Region.US:
-                    return EnvironmentUrlData.DefaultUS.Base;
-                case Region.EU:
-                    return EnvironmentUrlData.DefaultEU.Base;
+              
+                case Region.vBoxx:
+                    return EnvironmentUrlData.DefaultvBoxx.Base;
                 default:
                     return null;
             }
@@ -35,10 +33,9 @@ namespace Bit.Core.Utilities
         {
             switch (region)
             {
-                case Region.US:
-                    return EnvironmentUrlData.DefaultUS.Domain;
-                case Region.EU:
-                    return EnvironmentUrlData.DefaultEU.Domain;
+               
+                case Region.vBoxx:
+                    return EnvironmentUrlData.DefaultvBoxx.Domain;
                 default:
                     return null;
             }

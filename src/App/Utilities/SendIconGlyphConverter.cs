@@ -20,10 +20,10 @@ namespace Bit.App.Utilities
             switch (send.Type)
             {
                 case SendType.Text:
-                    icon = BitwardenIcons.FileText;
+                    icon = VaultwardenIcons.FileText;
                     break;
                 case SendType.File:
-                    icon = BitwardenIcons.File;
+                    icon = VaultwardenIcons.File;
                     break;
             }
             return icon;

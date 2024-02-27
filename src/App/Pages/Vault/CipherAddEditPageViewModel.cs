@@ -298,9 +298,9 @@ namespace Bit.App.Pages
         public bool IsSecureNote => Cipher?.Type == CipherType.SecureNote;
         public bool ShowUris => IsLogin && Cipher.Login.HasUris;
         public bool ShowAttachments => Cipher.HasAttachments;
-        public string ShowPasswordIcon => ShowPassword ? BitwardenIcons.EyeSlash : BitwardenIcons.Eye;
-        public string ShowCardNumberIcon => ShowCardNumber ? BitwardenIcons.EyeSlash : BitwardenIcons.Eye;
-        public string ShowCardCodeIcon => ShowCardCode ? BitwardenIcons.EyeSlash : BitwardenIcons.Eye;
+        public string ShowPasswordIcon => ShowPassword ? VaultwardenIcons.EyeSlash : VaultwardenIcons.Eye;
+        public string ShowCardNumberIcon => ShowCardNumber ? VaultwardenIcons.EyeSlash : VaultwardenIcons.Eye;
+        public string ShowCardCodeIcon => ShowCardCode ? VaultwardenIcons.EyeSlash : VaultwardenIcons.Eye;
         public int PasswordFieldColSpan => Cipher.ViewPassword ? 1 : 4;
         public int TotpColumnSpan => Cipher.ViewPassword ? 1 : 2;
         public bool AllowPersonal { get; set; }
@@ -308,7 +308,7 @@ namespace Bit.App.Pages
         public string PasswordVisibilityAccessibilityText => ShowPassword ? AppResources.PasswordIsVisibleTapToHide : AppResources.PasswordIsNotVisibleTapToShow;
         public bool HasTotpValue => IsLogin && !string.IsNullOrEmpty(Cipher?.Login?.Totp);
         public bool AllowTotpCopy => HasTotpValue && Cipher.ViewPassword;
-        public string SetupTotpText => $"{BitwardenIcons.Camera} {AppResources.SetupTotp}";
+        public string SetupTotpText => $"{VaultwardenIcons.Camera} {AppResources.SetupTotp}";
         public bool ShowPasskeyInfo => Cipher?.HasFido2Credential == true && !CloneMode;
 
         public void Init()

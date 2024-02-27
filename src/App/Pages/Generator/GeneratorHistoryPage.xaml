@@ -84,7 +84,7 @@
                             AutomationId="GeneratedPasswordDateLabel" />
                         <controls:IconButton
                             StyleClass="list-row-button, list-row-button-platform"
-                            Text="{Binding Source={x:Static core:BitwardenIcons.Paste}}"
+                            Text="{Binding Source={x:Static core:VaultwardenIcons.Paste}}"
                             Command="{Binding BindingContext.CopyCommand, Source={x:Reference _page}}"
                             CommandParameter="{Binding .}"
                             Grid.Row="0"

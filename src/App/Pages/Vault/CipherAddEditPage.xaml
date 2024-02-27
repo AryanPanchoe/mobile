@@ -152,7 +152,7 @@
                             AutomationId="LoginUsernameEntry" />
                         <controls:IconButton 
                             StyleClass="box-row-button, box-row-button-platform"
-                            Text="{Binding Source={x:Static core:BitwardenIcons.Generate}}"
+                            Text="{Binding Source={x:Static core:VaultwardenIcons.Generate}}"
                             Command="{Binding GenerateUsernameCommand}"
                             Grid.Column="1"
                             Grid.RowSpan="2"
@@ -192,7 +192,7 @@
                             AutomationId="LoginPasswordEntry" />
                         <controls:IconButton 
                             StyleClass="box-row-button, box-row-button-platform"
-                            Text="{Binding Source={x:Static core:BitwardenIcons.CheckCircle}}"
+                            Text="{Binding Source={x:Static core:VaultwardenIcons.CheckCircle}}"
                             Command="{Binding CheckPasswordCommand}"
                             Grid.Row="0"
                             Grid.Column="1"
@@ -215,7 +215,7 @@
                             AutomationId="ViewPasswordButton" />
                         <controls:IconButton 
                             StyleClass="box-row-button, box-row-button-platform"
-                            Text="{Binding Source={x:Static core:BitwardenIcons.Generate}}"
+                            Text="{Binding Source={x:Static core:VaultwardenIcons.Generate}}"
                             Command="{Binding GeneratePasswordCommand}"
                             Grid.Row="0"
                             Grid.Column="3"
@@ -290,7 +290,7 @@
                             AutomationId="LoginTotpEntry" />
                         <controls:IconButton 
                             StyleClass="box-row-button, box-row-button-platform"
-                            Text="{Binding Source={x:Static core:BitwardenIcons.Clone}}"
+                            Text="{Binding Source={x:Static core:VaultwardenIcons.Clone}}"
                             Command="{Binding CopyCommand}"
                             IsVisible="{Binding AllowTotpCopy}"
                             Grid.Row="0"
@@ -301,7 +301,7 @@
                             AutomationId="CopyTotpValueButton" />
                         <controls:IconButton 
                             StyleClass="box-row-button, box-row-button-platform"
-                            Text="{Binding Source={x:Static core:BitwardenIcons.Camera}}"
+                            Text="{Binding Source={x:Static core:VaultwardenIcons.Camera}}"
                             Clicked="ScanTotp_Clicked"
                             Grid.Row="0"
                             Grid.Column="2"
@@ -687,7 +687,7 @@
                                     AutomationId="LoginUriEntry" />
                                 <controls:IconButton
                                     StyleClass="box-row-button, box-row-button-platform"
-                                    Text="{Binding Source={x:Static core:BitwardenIcons.Cog}}"
+                                    Text="{Binding Source={x:Static core:VaultwardenIcons.Cog}}"
                                     Command="{Binding BindingContext.UriOptionsCommand, Source={x:Reference _page}}"
                                     CommandParameter="{Binding .}"
                                     Grid.Row="0"
@@ -737,7 +737,7 @@
                         StyleClass="box-label-regular" />
                     <controls:IconButton 
                         StyleClass="box-row-button, box-row-button-platform"
-                        Text="{Binding Source={x:Static core:BitwardenIcons.QuestionCircle}}"
+                        Text="{Binding Source={x:Static core:VaultwardenIcons.QuestionCircle}}"
                         Command="{Binding PasswordPromptHelpCommand}"
                         TextColor="{DynamicResource MutedColor}"
                         AutomationProperties.IsInAccessibleTree="True"

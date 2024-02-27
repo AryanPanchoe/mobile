@@ -113,7 +113,7 @@
                                     AutomationId="ItemValue" />
                                 <controls:IconButton
                                     StyleClass="box-row-button, box-row-button-platform"
-                                    Text="{Binding Source={x:Static core:BitwardenIcons.Clone}}"
+                                    Text="{Binding Source={x:Static core:VaultwardenIcons.Clone}}"
                                     Command="{Binding CopyCommand}"
                                     CommandParameter="LoginUsername"
                                     Grid.Row="0"
@@ -161,7 +161,7 @@
                                     AutomationId="ItemValue" />
                                 <controls:IconButton
                                     StyleClass="box-row-button, box-row-button-platform"
-                                    Text="{Binding Source={x:Static core:BitwardenIcons.CheckCircle}}"
+                                    Text="{Binding Source={x:Static core:VaultwardenIcons.CheckCircle}}"
                                     Command="{Binding CheckPasswordCommand}"
                                     Grid.Row="0"
                                     Grid.Column="1"
@@ -184,7 +184,7 @@
                                     AutomationId="ShowValueButton" />
                                 <controls:IconButton
                                     StyleClass="box-row-button, box-row-button-platform"
-                                    Text="{Binding Source={x:Static core:BitwardenIcons.Clone}}"
+                                    Text="{Binding Source={x:Static core:VaultwardenIcons.Clone}}"
                                     Command="{Binding CopyCommand}"
                                     CommandParameter="LoginPassword"
                                     Grid.Row="0"
@@ -256,7 +256,7 @@
                                     VerticalOptions="FillAndExpand" />
                                 <controls:IconButton
                                     StyleClass="box-row-button, box-row-button-platform"
-                                    Text="{Binding Source={x:Static core:BitwardenIcons.Clone}}"
+                                    Text="{Binding Source={x:Static core:VaultwardenIcons.Clone}}"
                                     Command="{Binding CopyCommand}"
                                     IsVisible="{Binding CanAccessPremium}"
                                     CommandParameter="LoginTotp"
@@ -337,7 +337,7 @@
                                     AutomationId="ShowValueButton" />
                                 <controls:IconButton
                                     StyleClass="box-row-button, box-row-button-platform"
-                                    Text="{Binding Source={x:Static core:BitwardenIcons.Clone}}"
+                                    Text="{Binding Source={x:Static core:VaultwardenIcons.Clone}}"
                                     Command="{Binding CopyCommand}"
                                     CommandParameter="CardNumber"
                                     Grid.Row="0"
@@ -421,7 +421,7 @@
                                     AutomationId="ShowValueButton" />
                                 <controls:IconButton
                                     StyleClass="box-row-button, box-row-button-platform"
-                                    Text="{Binding Source={x:Static core:BitwardenIcons.Clone}}"
+                                    Text="{Binding Source={x:Static core:VaultwardenIcons.Clone}}"
                                     Command="{Binding CopyCommand}"
                                     CommandParameter="CardCode"
                                     Grid.Row="0"
@@ -621,7 +621,7 @@
                                                 AutomationId="UriValue" />
                                             <controls:IconButton
                                                 StyleClass="box-row-button, box-row-button-platform"
-                                                Text="{Binding Source={x:Static core:BitwardenIcons.ShareSquare}}"
+                                                Text="{Binding Source={x:Static core:VaultwardenIcons.ShareSquare}}"
                                                 Command="{Binding BindingContext.LaunchUriCommand, Source={x:Reference _page}}"
                                                 CommandParameter="{Binding .}"
                                                 Grid.Row="0"
@@ -633,7 +633,7 @@
                                                 AutomationId="LaunchUriButton" />
                                             <controls:IconButton
                                                 StyleClass="box-row-button, box-row-button-platform"
-                                                Text="{Binding Source={x:Static core:BitwardenIcons.Clone}}"
+                                                Text="{Binding Source={x:Static core:VaultwardenIcons.Clone}}"
                                                 Command="{Binding BindingContext.CopyUriCommand, Source={x:Reference _page}}"
                                                 CommandParameter="{Binding .}"
                                                 Grid.Row="0"
@@ -697,7 +697,7 @@
                                                 AutomationId="CipherAttachmentFileSizeLabel" />
                                             <controls:IconButton
                                                 StyleClass="box-row-button, box-row-button-platform"
-                                                Text="{Binding Source={x:Static core:BitwardenIcons.Download}}"
+                                                Text="{Binding Source={x:Static core:VaultwardenIcons.Download}}"
                                                 Command="{Binding BindingContext.DownloadAttachmentCommand, Source={x:Reference _page}}"
                                                 CommandParameter="{Binding .}"
                                                 VerticalOptions="Center"

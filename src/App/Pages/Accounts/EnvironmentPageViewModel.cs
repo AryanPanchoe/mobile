@@ -25,9 +25,9 @@ namespace Bit.App.Pages
 
         public void Init()
         {
-            if (_environmentService.SelectedRegion != Region.SelfHosted ||
-                _environmentService.BaseUrl == Region.US.BaseUrl() ||
-                _environmentService.BaseUrl == Region.EU.BaseUrl())
+            if (_environmentService.SelectedRegion != Region.vBoxx ||
+                _environmentService.BaseUrl == Region.vBoxx.BaseUrl())
+ 
             {
                 return;
             }

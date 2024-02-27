@@ -54,7 +54,7 @@
                                         AutomationId="AttachmentFileSizeLabel" />
                                     <controls:IconButton 
                                         StyleClass="box-row-button, box-row-button-platform"
-                                        Text="{Binding Source={x:Static core:BitwardenIcons.Trash}}"
+                                        Text="{Binding Source={x:Static core:VaultwardenIcons.Trash}}"
                                         Command="{Binding BindingContext.DeleteAttachmentCommand, Source={x:Reference _page}}"
                                         CommandParameter="{Binding .}"
                                         VerticalOptions="Center"

@@ -6,28 +6,18 @@ namespace Bit.Core.Models.Data
 {
     public class EnvironmentUrlData
     {
-        public static EnvironmentUrlData DefaultUS = new EnvironmentUrlData
-        {
-            Base = "https://vault.bitwarden.com",
-            Api = "https://api.bitwarden.com",
-            Identity = "https://identity.bitwarden.com",
-            Icons = "https://icons.bitwarden.net",
-            WebVault = "https://vault.bitwarden.com",
-            Notifications = "https://notifications.bitwarden.com",
-            Events = "https://events.bitwarden.com",
-            Domain = "bitwarden.com"
-        };
+ 
 
-        public static EnvironmentUrlData DefaultEU = new EnvironmentUrlData
+        public static EnvironmentUrlData DefaultvBoxx = new EnvironmentUrlData
         {
-            Base = "https://vault.bitwarden.eu",
+            Base = "https://vault.vboxx.nl/",
             Api = "https://api.bitwarden.eu",
             Identity = "https://identity.bitwarden.eu",
             Icons = "https://icons.bitwarden.eu",
             WebVault = "https://vault.bitwarden.eu",
             Notifications = "https://notifications.bitwarden.eu",
             Events = "https://events.bitwarden.eu",
-            Domain = "bitwarden.eu"
+            Domain = "vboxx.nl"
         };
 
         public string Base { get; set; }
@@ -51,17 +41,11 @@ namespace Bit.Core.Models.Data
         {
             get
             {
-                if (Base == Region.US.BaseUrl())
-                {
-                    return Region.US;
-                }
-                if (Base == Region.EU.BaseUrl())
-                {
-                    return Region.EU;
-                }
-                return Region.SelfHosted;
+                return Region.vBoxx;
+
             }
         }
+        
 
         public EnvironmentUrlData FormatUrls()
         {
@@ -98,7 +82,7 @@ namespace Bit.Core.Models.Data
             {
                 return string.Empty;
             }
-            if (url.Contains(Region.US.Domain()) || url.Contains(Region.EU.Domain()))
+            if (url.Contains(Region.vBoxx.Domain()))
             {
                 return CoreHelpers.GetDomain(url);
             }

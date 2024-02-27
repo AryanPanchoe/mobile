@@ -48,7 +48,7 @@
 
     <StackLayout x:Name="_mainLayout" Spacing="0" Padding="0">
         <controls:IconLabel IsVisible="{Binding ShowSearchDirection}"
-               Text="{Binding Source={x:Static core:BitwardenIcons.Search}}"
+               Text="{Binding Source={x:Static core:VaultwardenIcons.Search}}"
                StyleClass="text-muted"
                FontSize="50"
                VerticalOptions="CenterAndExpand"

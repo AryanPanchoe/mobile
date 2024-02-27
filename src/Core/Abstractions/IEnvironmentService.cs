@@ -20,5 +20,6 @@ namespace Bit.Core.Abstractions
         string GetCurrentDomain();
         Task SetUrlsFromStorageAsync();
         Task<EnvironmentUrlData> SetRegionAsync(Region region, EnvironmentUrlData selfHostedUrls = null);
+        Task SetRegionAsync(bool v);
     }
 }

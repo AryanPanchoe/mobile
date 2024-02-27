@@ -35,7 +35,7 @@ namespace Bit.App.Lists.ItemViewModels.CustomFields
             get
             {
                 var i18nKey = _cipher.LinkedFieldI18nKey(Field.LinkedId.GetValueOrDefault());
-                return $"{BitwardenIcons.Link} {_i18nService.T(i18nKey)}";
+                return $"{VaultwardenIcons.Link} {_i18nService.T(i18nKey)}";
             }
         }
 

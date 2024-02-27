@@ -138,7 +138,7 @@
                         AutomationProperties.IsInAccessibleTree="True"
                         AutomationProperties.Name="{u:I18n Filter}" />
                     <controls:MiButton
-                        Text="{Binding Source={x:Static core:BitwardenIcons.ViewCellMenu}}"
+                        Text="{Binding Source={x:Static core:VaultwardenIcons.ViewCellMenu}}"
                         StyleClass="list-row-button-text, list-row-button-platform"
                         Command="{Binding VaultFilterCommand}"
                         VerticalOptions="Center"

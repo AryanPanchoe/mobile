@@ -131,7 +131,7 @@ namespace Bit.App.Pages
         public Command TogglePasswordCommand { get; }
         public ICommand MoreCommand { get; internal set; }
         public ICommand LogInWithDeviceCommand { get; }
-        public string ShowPasswordIcon => ShowPassword ? BitwardenIcons.EyeSlash : BitwardenIcons.Eye;
+        public string ShowPasswordIcon => ShowPassword ? VaultwardenIcons.EyeSlash : VaultwardenIcons.Eye;
         public string PasswordVisibilityAccessibilityText => ShowPassword ? AppResources.PasswordIsVisibleTapToHide : AppResources.PasswordIsNotVisibleTapToShow;
         public string LoggingInAsText => string.Format(AppResources.LoggingInAsXOnY, Email, EnvironmentDomainName);
         public bool IsIosExtension { get; set; }

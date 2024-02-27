@@ -227,11 +227,11 @@ namespace Bit.App.Pages
         public bool ShowExpirationCustomPickers => EditMode || ExpirationDateTypeSelectedIndex == 7;
         public DateTimeViewModel DeletionDateTimeViewModel { get; }
         public DateTimeViewModel ExpirationDateTimeViewModel { get; }
-        public string ShowPasswordIcon => ShowPassword ? BitwardenIcons.EyeSlash : BitwardenIcons.Eye;
+        public string ShowPasswordIcon => ShowPassword ? VaultwardenIcons.EyeSlash : VaultwardenIcons.Eye;
         public string PasswordVisibilityAccessibilityText => ShowPassword ? AppResources.PasswordIsVisibleTapToHide : AppResources.PasswordIsNotVisibleTapToShow;
         public string FileTypeAccessibilityLabel => IsFile ? AppResources.FileTypeIsSelected : AppResources.FileTypeIsNotSelected;
         public string TextTypeAccessibilityLabel => IsText ? AppResources.TextTypeIsSelected : AppResources.TextTypeIsNotSelected;
-        public string OptionsShowHideIcon => ShowOptions ? BitwardenIcons.ChevronUp : BitwardenIcons.AngleDown;
+        public string OptionsShowHideIcon => ShowOptions ? VaultwardenIcons.ChevronUp : VaultwardenIcons.AngleDown;
 
         public async Task InitAsync()
         {

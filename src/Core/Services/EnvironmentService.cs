@@ -77,7 +77,7 @@ namespace Bit.Core.Services
 
                 if (urls == null || urls.IsEmpty || region is null)
                 {
-                    await SetRegionAsync(Region.US);
+                    await SetRegionAsync(Region.vBoxx);
                     _conditionedAwaiterManager.SetAsCompleted(AwaiterPrecondition.EnvironmentUrlsInited);
                     return;
                 }
@@ -97,12 +97,12 @@ namespace Bit.Core.Services
         {
             EnvironmentUrlData urls;
 
-            if (region == Region.SelfHosted)
+            if (region == Region.vBoxx)
             {
                 // If user saves a self-hosted region with empty fields, default to US
                 if (selfHostedUrls.IsEmpty)
                 {
-                    return await SetRegionAsync(Region.US);
+                    return await SetRegionAsync(Region.vBoxx);
                 }
                 urls = selfHostedUrls.FormatUrls();
             }
@@ -124,5 +124,7 @@ namespace Bit.Core.Services
             _apiService.SetUrls(urls);
             return urls;
         }
+
+        public Task SetRegionAsync(bool v) => throw new System.NotImplementedException();
     }
 }

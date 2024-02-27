@@ -64,7 +64,7 @@
                 x:Name="_checkIcon"
                 IsVisible="{Binding ShowScanner}"
                 StyleClass="box-row-button, box-row-button-platform"
-                Text="{Binding Source={x:Static core:BitwardenIcons.CheckCircle}}"
+                Text="{Binding Source={x:Static core:VaultwardenIcons.CheckCircle}}"
                 HorizontalOptions="Center"
                 VerticalOptions="Start"
                 FontSize="Title"

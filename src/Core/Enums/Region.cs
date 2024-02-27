@@ -2,9 +2,7 @@
 {
     public enum Region
     {
-        US,
-        EU,
-        SelfHosted
+        vBoxx
     }
 }
 

@@ -1,6 +1,6 @@
 ﻿namespace Bit.Core
 {
-    public static class BitwardenIcons
+    public static class VaultwardenIcons
     {
         public const string User = "\xe900";
         public const string UserF = "\xe901";

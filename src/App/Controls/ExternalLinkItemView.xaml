@@ -17,7 +17,7 @@
             LineBreakMode="TailTruncation" />
 
         <controls:IconLabel
-            Text="{Binding Source={x:Static core:BitwardenIcons.ShareSquare}}"
+            Text="{Binding Source={x:Static core:VaultwardenIcons.ShareSquare}}"
             TextColor="{DynamicResource TextColor}"
             HorizontalOptions="End"
             VerticalOptions="Center"

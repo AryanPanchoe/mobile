@@ -78,38 +78,38 @@ namespace Bit.App.Pages
                 }
                 if (IsTrash)
                 {
-                    _icon = BitwardenIcons.Trash;
+                    _icon = VaultwardenIcons.Trash;
                 }
                 else if (Folder != null)
                 {
-                    _icon = BitwardenIcons.Folder;
+                    _icon = VaultwardenIcons.Folder;
                 }
                 else if (Collection != null)
                 {
-                    _icon = BitwardenIcons.Collection;
+                    _icon = VaultwardenIcons.Collection;
                 }
                 else if (IsTotpCode)
                 {
-                    _icon = BitwardenIcons.Clock;
+                    _icon = VaultwardenIcons.Clock;
                 }
                 else if (Type != null)
                 {
                     switch (Type.Value)
                     {
                         case CipherType.Login:
-                            _icon = BitwardenIcons.Globe;
+                            _icon = VaultwardenIcons.Globe;
                             break;
                         case CipherType.SecureNote:
-                            _icon = BitwardenIcons.StickyNote;
+                            _icon = VaultwardenIcons.StickyNote;
                             break;
                         case CipherType.Card:
-                            _icon = BitwardenIcons.CreditCard;
+                            _icon = VaultwardenIcons.CreditCard;
                             break;
                         case CipherType.Identity:
-                            _icon = BitwardenIcons.IdCard;
+                            _icon = VaultwardenIcons.IdCard;
                             break;
                         default:
-                            _icon = BitwardenIcons.Globe;
+                            _icon = VaultwardenIcons.Globe;
                             break;
                     }
                 }

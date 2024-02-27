@@ -13,28 +13,28 @@ namespace Bit.App.Utilities
                 case CipherType.Login:
                     return GetLoginIconGlyph(cipher);
                 case CipherType.SecureNote:
-                    return BitwardenIcons.StickyNote;
+                    return VaultwardenIcons.StickyNote;
                 case CipherType.Card:
-                    return BitwardenIcons.CreditCard;
+                    return VaultwardenIcons.CreditCard;
                 case CipherType.Identity:
-                    return BitwardenIcons.IdCard;
+                    return VaultwardenIcons.IdCard;
             }
             return null;
         }
 
         static string GetLoginIconGlyph(CipherView cipher)
         {
-            var icon = BitwardenIcons.Globe;
+            var icon = VaultwardenIcons.Globe;
             if (cipher.Login.Uri != null)
             {
                 var hostnameUri = cipher.Login.Uri;
                 if (hostnameUri.StartsWith(Constants.AndroidAppProtocol))
                 {
-                    icon = BitwardenIcons.Android;
+                    icon = VaultwardenIcons.Android;
                 }
                 else if (hostnameUri.StartsWith(Constants.iOSAppProtocol))
                 {
-                    icon = BitwardenIcons.Apple;
+                    icon = VaultwardenIcons.Apple;
                 }
             }
             return icon;
@@ -45,9 +45,9 @@ namespace Bit.App.Utilities
             switch (type)
             {
                 case BooleanGlyphType.Checkbox:
-                    return value ? BitwardenIcons.CheckSquare : BitwardenIcons.Square;
+                    return value ? VaultwardenIcons.CheckSquare : VaultwardenIcons.Square;
                 case BooleanGlyphType.Eye:
-                    return value ? BitwardenIcons.EyeSlash : BitwardenIcons.Eye;
+                    return value ? VaultwardenIcons.EyeSlash : VaultwardenIcons.Eye;
                 default:
                     return "";
             }

@@ -80,30 +80,30 @@ namespace Bit.App.Pages
 
         public string SelectedEnvironmentName
         {
-            get => $"{_selectedEnvironmentName} {BitwardenIcons.AngleDown}";
+            get => $"{_selectedEnvironmentName} {VaultwardenIcons.AngleDown}";
             set => SetProperty(ref _selectedEnvironmentName, value);
         }
 
         public string RegionText => $"{AppResources.LoggingInOn}:";
         public bool CanContinue => !string.IsNullOrEmpty(Email);
 
-        public FormattedString CreateAccountText
-        {
-            get
-            {
-                var fs = new FormattedString();
-                fs.Spans.Add(new Span
-                {
-                    Text = $"{AppResources.NewAroundHere} "
-                });
-                fs.Spans.Add(new Span
-                {
-                    Text = AppResources.CreateAccount,
-                    TextColor = ThemeManager.GetResourceColor("PrimaryColor")
-                });
-                return fs;
-            }
-        }
+     //   public FormattedString CreateAccountText
+     //   {
+       //     get
+      //      {
+      //          var fs = new FormattedString();
+     //           fs.Spans.Add(new Span
+     //           {
+      //              Text = $"{AppResources.NewAroundHere} "
+      //          });
+      //          fs.Spans.Add(new Span
+       //         {
+      //              Text = AppResources.CreateAccount,
+      //              TextColor = ThemeManager.GetResourceColor("PrimaryColor")
+      //          });
+      //          return fs;
+        //    }
+        // }
 
         public AccountSwitchingOverlayViewModel AccountSwitchingOverlayViewModel { get; }
         public Action StartLoginAction { get; set; }
@@ -165,8 +165,9 @@ namespace Bit.App.Pages
         {
             _displayEuEnvironment = await _configService.GetFeatureFlagBoolAsync(Constants.DisplayEuEnvironmentFlag);
             var options = _displayEuEnvironment
-                    ? new string[] { BwRegion.US.Domain(), BwRegion.EU.Domain(), AppResources.SelfHosted }
-                    : new string[] { BwRegion.US.Domain(), AppResources.SelfHosted };
+                    ? new string[] { BwRegion.vBoxx.Domain(), AppResources.SelfHosted,}
+                    : new string[] { BwRegion.vBoxx.Domain(), AppResources.SelfHosted };
+                    
 
             await Device.InvokeOnMainThreadAsync(async () =>
             {
@@ -183,7 +184,7 @@ namespace Bit.App.Pages
                     return;
                 }
 
-                await _environmentService.SetRegionAsync(result == BwRegion.EU.Domain() ? BwRegion.EU : BwRegion.US);
+                await _environmentService.SetRegionAsync(result == BwRegion.vBoxx.Domain());
                 await _configService.GetAsync(true);
                 SelectedEnvironmentName = result;
             });
@@ -192,7 +193,7 @@ namespace Bit.App.Pages
         public async Task UpdateEnvironmentAsync()
         {
             var region = _environmentService.SelectedRegion;
-            if (region == BwRegion.SelfHosted)
+            if (region == BwRegion.vBoxx)
             {
                 SelectedEnvironmentName = AppResources.SelfHosted;
                 await _configService.GetAsync(true);

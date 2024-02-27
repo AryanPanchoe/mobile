@@ -8,7 +8,7 @@
     xmlns:u="clr-namespace:Bit.App.Utilities"
     x:DataType="pages:HomeViewModel"
     x:Name="_page"
-    Title="{Binding PageTitle}">
+    Title="Vaultwarden">
     <ContentPage.BindingContext>
         <pages:HomeViewModel />
     </ContentPage.BindingContext>
@@ -113,14 +113,7 @@
                         AutomationId="ContinueButton"
                         />
                         
-                <Label FormattedText="{Binding CreateAccountText}"
-                       Margin="0, 10"
-                        StyleClass="box-footer-label"
-                        AutomationId="CreateAccountLabel">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding CreateAccountCommand}" />
-                    </Label.GestureRecognizers>
-                </Label>
+             
             </StackLayout>
         </ResourceDictionary>
     </ContentPage.Resources>

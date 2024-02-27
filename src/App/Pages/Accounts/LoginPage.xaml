@@ -9,7 +9,7 @@
     xmlns:u="clr-namespace:Bit.App.Utilities"
     x:DataType="pages:LoginPageViewModel"
     x:Name="_page"
-    Title="{Binding PageTitle}"
+    Title="VaultWarden"
     AutomationId="PageTitleLabel">
     
     <ContentPage.BindingContext>
@@ -116,7 +116,7 @@
                         <controls:IconLabelButton
                             HorizontalOptions="Fill"
                             VerticalOptions="CenterAndExpand"
-                            Icon="{Binding Source={x:Static core:BitwardenIcons.Device}}"
+                            Icon="{Binding Source={x:Static core:VaultwardenIcons.Device}}"
                             Label="{u:I18n LogInWithAnotherDevice}"
                             ButtonCommand="{Binding LogInWithDeviceCommand}"
                             IsVisible="{Binding IsKnownDevice}"
@@ -125,7 +125,7 @@
                         <controls:IconLabelButton
                             HorizontalOptions="Fill"
                             VerticalOptions="CenterAndExpand"
-                            Icon="{Binding Source={x:Static core:BitwardenIcons.Suitcase}}"
+                            Icon="{Binding Source={x:Static core:VaultwardenIcons.Suitcase}}"
                             Label="{u:I18n LogInSso}"
                             AutomationId="LogInWithSsoButton">
                             <controls:IconLabelButton.GestureRecognizers>

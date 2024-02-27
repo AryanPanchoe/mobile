@@ -71,7 +71,7 @@ namespace Bit.iOS.Core.Controllers
             UsernameCell.TextField.SpellCheckingType = UITextSpellCheckingType.No;
             UsernameCell.TextField.ReturnKeyType = UIReturnKeyType.Next;
             UsernameCell.Button.TitleLabel.Font = UIFont.FromName("bwi-font", 28f);
-            UsernameCell.Button.SetTitle(BitwardenIcons.Generate, UIControlState.Normal);
+            UsernameCell.Button.SetTitle(VaultwardenIcons.Generate, UIControlState.Normal);
             UsernameCell.Button.AccessibilityLabel = AppResources.GenerateUsername;
             UsernameCell.Button.TouchUpInside += (sender, e) =>
             {
@@ -86,7 +86,7 @@ namespace Bit.iOS.Core.Controllers
             PasswordCell.TextField.SecureTextEntry = true;
             PasswordCell.TextField.ReturnKeyType = UIReturnKeyType.Next;
             PasswordCell.Button.TitleLabel.Font = UIFont.FromName("bwi-font", 28f);
-            PasswordCell.Button.SetTitle(BitwardenIcons.Generate, UIControlState.Normal);
+            PasswordCell.Button.SetTitle(VaultwardenIcons.Generate, UIControlState.Normal);
             PasswordCell.Button.AccessibilityLabel = AppResources.GeneratePassword;
             PasswordCell.Button.TouchUpInside += (sender, e) =>
             {

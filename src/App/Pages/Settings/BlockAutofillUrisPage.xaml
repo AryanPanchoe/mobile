@@ -60,7 +60,7 @@
                                 HorizontalOptions="StartAndExpand"/>
                             <controls:IconButton
                                 StyleClass="box-row-button-muted, box-row-button-platform"
-                                Text="{Binding Source={x:Static core:BitwardenIcons.PencilSquare}}"
+                                Text="{Binding Source={x:Static core:VaultwardenIcons.PencilSquare}}"
                                 Command="{Binding EditUriCommand}"
                                 Margin="5,0,15,0"
                                 AutomationProperties.IsInAccessibleTree="True"

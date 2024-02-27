@@ -65,7 +65,7 @@
                 AutomationProperties.IsInAccessibleTree="True"
                 AutomationProperties.Name="{u:I18n Filter}" />
             <controls:MiButton
-                Text="{Binding Source={x:Static core:BitwardenIcons.ViewCellMenu}}"
+                Text="{Binding Source={x:Static core:VaultwardenIcons.ViewCellMenu}}"
                 StyleClass="list-row-button-text, list-row-button-platform"
                 Command="{Binding VaultFilterCommand}"
                 VerticalOptions="Center"
@@ -76,7 +76,7 @@
         <BoxView StyleClass="box-row-separator" />
 
         <controls:IconLabel IsVisible="{Binding ShowSearchDirection}"
-               Text="{Binding Source={x:Static core:BitwardenIcons.Search}}"
+               Text="{Binding Source={x:Static core:VaultwardenIcons.Search}}"
                StyleClass="text-muted"
                FontSize="50"
                VerticalOptions="CenterAndExpand"

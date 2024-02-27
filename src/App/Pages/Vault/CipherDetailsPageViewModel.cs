@@ -214,9 +214,9 @@ namespace Bit.App.Pages
             !string.IsNullOrWhiteSpace(Cipher.Identity.Country));
         public bool ShowAttachments => Cipher.HasAttachments && (CanAccessPremium || Cipher.OrganizationId != null);
         public bool ShowTotp => IsLogin && !string.IsNullOrWhiteSpace(Cipher.Login.Totp);
-        public string ShowPasswordIcon => ShowPassword ? BitwardenIcons.EyeSlash : BitwardenIcons.Eye;
-        public string ShowCardNumberIcon => ShowCardNumber ? BitwardenIcons.EyeSlash : BitwardenIcons.Eye;
-        public string ShowCardCodeIcon => ShowCardCode ? BitwardenIcons.EyeSlash : BitwardenIcons.Eye;
+        public string ShowPasswordIcon => ShowPassword ? VaultwardenIcons.EyeSlash : VaultwardenIcons.Eye;
+        public string ShowCardNumberIcon => ShowCardNumber ? VaultwardenIcons.EyeSlash : VaultwardenIcons.Eye;
+        public string ShowCardCodeIcon => ShowCardCode ? VaultwardenIcons.EyeSlash : VaultwardenIcons.Eye;
         public string PasswordVisibilityAccessibilityText => ShowPassword ? AppResources.PasswordIsVisibleTapToHide : AppResources.PasswordIsNotVisibleTapToShow;
         public string TotpCodeFormatted
         {
