@@ -265,6 +265,7 @@
       <IsAppExtension>true</IsAppExtension>
       <Project>{F8C3F648-EA5A-4719-8005-85D1690B1655}</Project>
       <Name>iOS.ShareExtension</Name>
+      <IsWatchApp>false</IsWatchApp>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -450,8 +451,8 @@
     <BundleResource Include="Resources\logo_white%403x.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\Assets.xcassets\LaunchScreen.imageset\" />
     <Folder Include="Resources\Assets.xcassets\ic_warning.imageset\" />
+    <Folder Include="Resources\Assets.xcassets\LaunchScreen.imageset\" />
   </ItemGroup>
   <ItemGroup Condition=" '$(Configuration)' == 'Debug' AND Exists('$(WatchAppBundleFullPath)') ">
     <_ResolvedWatchAppReferences Include="$(WatchAppBundleFullPath)" />
