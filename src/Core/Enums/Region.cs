@@ -2,7 +2,8 @@
 {
     public enum Region
     {
-        vBoxx
+        vBoxx,
+        SelfHosted
     }
 }
 

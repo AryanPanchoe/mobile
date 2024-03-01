@@ -193,7 +193,7 @@ namespace Bit.App.Pages
         public async Task UpdateEnvironmentAsync()
         {
             var region = _environmentService.SelectedRegion;
-            if (region == BwRegion.vBoxx)
+            if (region == BwRegion.SelfHosted)
             {
                 SelectedEnvironmentName = AppResources.SelfHosted;
                 await _configService.GetAsync(true);

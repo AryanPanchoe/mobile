@@ -23,10 +23,10 @@
                 <StackLayout StyleClass="box-row-header">
                     <Label Text="{u:I18n SelfHostedEnvironment, Header=True}"
                            StyleClass="box-header, box-header-platform" />
-                </StackLayout>
+                </StackLayout>          
                 <StackLayout StyleClass="box-row">
                     <Label Text="{u:I18n ServerUrl}" StyleClass="box-label" />
-                    <Entry Text="{Binding BaseUrl}" Keyboard="Url" Placeholder="ex. https://bitwarden.company.com"
+                    <Entry Text="{Binding BaseUrl}" Keyboard="Url" Placeholder="ex. https://vault.vboxx.nl"
                            StyleClass="box-value" ReturnType="Go" ReturnCommand="{Binding SubmitCommand}"
                            AutomationId="ServerUrlEntry"/>
                 </StackLayout>

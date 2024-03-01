@@ -77,7 +77,7 @@ namespace Bit.App.Utilities
                 }
                 else
                 {
-                    iconsUrl = "https://icons.bitwarden.net";
+                    iconsUrl = "https://vault.vboxx.nl";
                 }
             }
             return string.Format("{0}/{1}/icon.png", iconsUrl, hostname);

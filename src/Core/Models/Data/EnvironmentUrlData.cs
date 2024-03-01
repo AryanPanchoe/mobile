@@ -10,13 +10,13 @@ namespace Bit.Core.Models.Data
 
         public static EnvironmentUrlData DefaultvBoxx = new EnvironmentUrlData
         {
-            Base = "https://vault.vboxx.nl/",
-            Api = "https://api.bitwarden.eu",
-            Identity = "https://identity.bitwarden.eu",
-            Icons = "https://icons.bitwarden.eu",
-            WebVault = "https://vault.bitwarden.eu",
-            Notifications = "https://notifications.bitwarden.eu",
-            Events = "https://events.bitwarden.eu",
+            Base = "https://vault.vboxx.nl",
+            Api = "https://vault.vboxx.nl",
+            Identity = "https://vault.vboxx.nl",
+            Icons = "https://vault.vboxx.nl",
+            WebVault = "https://vault.vboxx.nl",
+            Notifications = "https://vault.vboxx.nl",
+            Events = "https://vault.vboxx.nl",
             Domain = "vboxx.nl"
         };
 

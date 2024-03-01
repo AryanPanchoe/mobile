@@ -39,7 +39,7 @@ namespace Bit.App.Pages
         private readonly IDeviceTrustCryptoService _deviceTrustCryptoService;
         private TwoFactorProviderType? _selectedProviderType;
         private string _totpInstruction;
-        private string _webVaultUrl = "https://vault.bitwarden.com";
+        private string _webVaultUrl = "https://vault.vboxx.nl";
         private bool _enableContinue = false;
         private bool _showContinue = true;
 
