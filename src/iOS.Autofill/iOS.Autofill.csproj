@@ -196,6 +196,7 @@
     <BundleResource Include="Resources\bwi-font.ttf" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="netstandard" />
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />

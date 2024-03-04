@@ -3,7 +3,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                     x:Class="Bit.App.Styles.SolarizedDark">
     <Color x:Key="TextColor">#eee8d5</Color>
-    <Color x:Key="PrimaryColor">#859900</Color>
+    <Color x:Key="PrimaryColor">orange</Color>
     <Color x:Key="DangerColor">#dc322f</Color>
     <Color x:Key="SuccessColor">#859900</Color>
     <Color x:Key="InfoColor">#859900</Color>
