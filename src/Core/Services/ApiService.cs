@@ -674,6 +674,7 @@ namespace Bit.Core.Services
 
                 if (!Uri.IsWellFormedUriString(baseUrl, UriKind.Absolute))
                 {
+                    Console.WriteLine("Setting that is incorrect: " + baseUrl);
                     throw new ApiException(new ErrorResponse
                     {
                         StatusCode = HttpStatusCode.BadGateway,

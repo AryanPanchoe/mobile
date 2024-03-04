@@ -1,4 +1,5 @@
-﻿using System.Text.RegularExpressions;
+﻿using System;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Bit.Core.Abstractions;
 using Bit.Core.Enums;
@@ -102,6 +103,7 @@ namespace Bit.Core.Services
                 // If user saves a self-hosted region with empty fields, default to US
                 if (selfHostedUrls.IsEmpty)
                 {
+                    Console.WriteLine("temp");
                     return await SetRegionAsync(Region.vBoxx);
                 }
                 urls = selfHostedUrls.FormatUrls();
