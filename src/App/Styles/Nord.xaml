@@ -3,10 +3,10 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                     x:Class="Bit.App.Styles.Nord">
     <Color x:Key="TextColor">#e5e9f0</Color>
-    <Color x:Key="PrimaryColor">#FF8C00</Color>
+    <Color x:Key="PrimaryColor">#ea9a24</Color>
     <Color x:Key="DangerColor">#bf616a</Color>
     <Color x:Key="SuccessColor">#a3be8c</Color>
-    <Color x:Key="InfoColor">#FF8C00</Color>
+    <Color x:Key="InfoColor">#ea9a24</Color>
     <Color x:Key="WarningColor">#d08770</Color>
     <Color x:Key="MutedColor">#d8dee9</Color>
     <Color x:Key="PasswordNumberColor">#88c0d0</Color>
@@ -20,10 +20,10 @@
     <Color x:Key="BorderColor">#2e3440</Color>
     <Color x:Key="DisabledIconColor">#d8dee9</Color>
     <Color x:Key="SeparatorColor">#2e3440</Color>
-    <Color x:Key="TouchColor">#FF8C00</Color>
+    <Color x:Key="TouchColor">#ea9a24</Color>
 
     <Color x:Key="BoxBorderColor">#2e3440</Color>
-    <Color x:Key="BoxHeaderTextColor">#FF8C00</Color>
+    <Color x:Key="BoxHeaderTextColor">#ea9a24</Color>
 
     <Color x:Key="TitleTextColor">#d8dee9</Color>
     <Color x:Key="TitleEntryTextColor">#e5e9f0</Color>
@@ -32,27 +32,27 @@
     <Color x:Key="ListItemBorderColor">#2e3440</Color>
     <Color x:Key="ListSectionBorderColor">#2e3440</Color>
     <Color x:Key="ListSectionBorderBottomColor">#2e3440</Color>
-    <Color x:Key="ListHeaderTextColor">#FF8C00</Color>
+    <Color x:Key="ListHeaderTextColor">#ea9a24</Color>
     <Color x:Key="ListHeaderBackgroundColor">#2e3440</Color>
 
     <Color x:Key="SliderThumbColor">#e5e9f0</Color>
     <Color x:Key="SliderThumbBorderColor">#2e3440</Color>
-    <Color x:Key="SliderTrackMinColor">#FF8C00</Color>
+    <Color x:Key="SliderTrackMinColor">#ea9a24</Color>
     <Color x:Key="SliderTrackMaxColor">#2e3440</Color>
 
-    <Color x:Key="SwitchOnColor">#FF8C00</Color>
+    <Color x:Key="SwitchOnColor">#ea9a24</Color>
     <Color x:Key="SwitchThumbColor">#e5e9f0</Color>
 
-    <Color x:Key="StepperBackgroundColor">#FF8C00</Color>
+    <Color x:Key="StepperBackgroundColor">#ea9a24</Color>
     <Color x:Key="StepperForegroundColor">#e5e9f0</Color>
 
-    <Color x:Key="ButtonPrimaryBackgroundColor">#FF8C00</Color>
-    <Color x:Key="ButtonPrimaryBackgroundColorPressed">#FF8C00</Color>
+    <Color x:Key="ButtonPrimaryBackgroundColor">#ea9a24</Color>
+    <Color x:Key="ButtonPrimaryBackgroundColorPressed">#ea9a24</Color>
     <Color x:Key="ButtonPrimaryBackgroundColorDisabled">#5C6C7B</Color>
     <Color x:Key="ButtonPrimaryTextColor">#e5e9f0</Color>
     <Color x:Key="ButtonPrimaryTextColorDisabled">#ACB5C5</Color>
 
-    <Color x:Key="ButtonBackgroundColor">#FF8C00</Color>
+    <Color x:Key="ButtonBackgroundColor">#ea9a24</Color>
     <Color x:Key="ButtonBackgroundColorPressed">#3A4251</Color>
     <Color x:Key="ButtonBackgroundColorDisabled">#454951</Color>
     <Color x:Key="ButtonBorderColor">#5E6A82</Color>
@@ -60,17 +60,17 @@
     <Color x:Key="ButtonTextColorDisabled">#aaaaaa</Color>
     <Color x:Key="ButtonTextColorOpacity">#99e5e9f0</Color>
 
-    <Color x:Key="FabColor">#FF8C00</Color>
-    <Color x:Key="FabPressedColor">#FF8C00</Color>
+    <Color x:Key="FabColor">#ea9a24</Color>
+    <Color x:Key="FabPressedColor">#ea9a24</Color>
 
     <Color x:Key="TabBarBackgroundColor">#2e3440</Color>
     <Color x:Key="TabBarItemColor">#e5e9f0</Color>
-    <Color x:Key="TabBarSelectedItemColor">#FF8C00</Color>
+    <Color x:Key="TabBarSelectedItemColor">#ea9a24</Color>
 
     <Color x:Key="NavigationBarBackgroundColor">#2e3440</Color>
     <Color x:Key="NavigationBarTextColor">#e5e9f0</Color>
 
-    <Color x:Key="HyperlinkColor">#FF8C00</Color>
+    <Color x:Key="HyperlinkColor">#ea9a24</Color>
     <Color x:Key="FingerprintPhrase">#F08DC7</Color>
-    <Color x:Key="ScanningToggleModeTextColor">#FF8C00</Color>
+    <Color x:Key="ScanningToggleModeTextColor">#ea9a24</Color>
 </ResourceDictionary>

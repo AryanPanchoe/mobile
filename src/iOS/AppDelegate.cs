@@ -196,7 +196,7 @@ namespace Bit.iOS
             {
                 BackgroundColor = ThemeManager.GetResourceColor("SplashBackgroundColor").ToUIColor()
             };
-            var logo = new UIImage(!ThemeManager.UsingLightTheme ? "logo_white.png" : "logo.png");
+            var logo = new UIImage(ThemeHelpers.LightTheme ? "logo.PNG" : "logo_white.PNG");
             var imageView = new UIImageView(logo)
             {
                 Center = new CoreGraphics.CGPoint(view.Center.X, view.Center.Y - 30)
@@ -224,7 +224,7 @@ namespace Bit.iOS
                 .ViewWithTag(SPLASH_VIEW_TAG)?
                 .RemoveFromSuperview();
 
-            ThemeManager.UpdateThemeOnPagesAsync();
+            _ = ThemeManager.UpdateThemeOnPagesAsync();
         }
 
         public override void WillEnterForeground(UIApplication uiApplication)

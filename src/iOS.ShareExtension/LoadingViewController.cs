@@ -64,7 +64,7 @@ namespace Bit.iOS.ShareExtension
 
             base.ViewDidLoad();
 
-            Logo.Image = new UIImage(ThemeHelpers.LightTheme ? "logo.png" : "logo_white.png");
+            Logo.Image = new UIImage(ThemeHelpers.LightTheme ? "logo.PNG" : "logo_white.PNG");
             View.BackgroundColor = ThemeHelpers.SplashBackgroundColor;
             _context.ExtensionContext = ExtensionContext;
             _context.ProviderType = GetProviderTypeFromExtensionInputItems();

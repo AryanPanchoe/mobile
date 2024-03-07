@@ -75,7 +75,7 @@ namespace Bit.App.Pages
             IdentityUrl = resUrls.Identity;
             IconsUrl = resUrls.Icons;
             NotificationsUrls = resUrls.Notifications;
-
+            
             SubmitSuccessAction?.Invoke();
         }
 
@@ -84,7 +84,7 @@ namespace Bit.App.Pages
             bool IsUrlValid(string url)
             {
                 return string.IsNullOrEmpty(url) || Uri.IsWellFormedUriString(url, UriKind.RelativeOrAbsolute);
-            }
+            } 
 
             return IsUrlValid(BaseUrl)
                 && IsUrlValid(ApiUrl)

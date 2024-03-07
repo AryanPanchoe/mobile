@@ -38,7 +38,7 @@ namespace Bit.iOS.Extension
         {
             InitApp();
             base.ViewDidLoad();
-            Logo.Image = new UIImage(ThemeHelpers.LightTheme ? "logo.png" : "logo_white.png");
+            Logo.Image = new UIImage(ThemeHelpers.LightTheme ? "logo.PNG" : "logo_white.PNG");
             View.BackgroundColor = ThemeHelpers.SplashBackgroundColor;
             _context.ExtContext = ExtensionContext;
             foreach (var item in ExtensionContext.InputItems)

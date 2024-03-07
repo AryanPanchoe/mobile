@@ -101,7 +101,7 @@ namespace Bit.App.Pages
 
         private void UpdateLogo()
         {
-            _logo.Source = !ThemeManager.UsingLightTheme ? "logo_white.png" : "logo.png";
+            _logo.Source = !ThemeManager.UsingLightTheme ? "logo_white.PNG" : "logo.PNG";
         }
 
         private void Cancel_Clicked(object sender, EventArgs e)
