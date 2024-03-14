@@ -2,8 +2,10 @@
 {
     public enum Region
     {
-        vBoxx,
-        SelfHosted
+        None = 0,
+        vBoxx = 1,
+        SelfHosted = 2,
+        
     }
 }
 

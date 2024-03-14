@@ -43,7 +43,7 @@ namespace Bit.iOS.Autofill
             {
                 InitApp();
                 base.ViewDidLoad();
-                Logo.Image = new UIImage(ThemeHelpers.LightTheme ? "logo.PNG" : "logo_white.PNG");
+                Logo.Image = new UIImage(ThemeHelpers.LightTheme ? "logo.png" : "logo_white.png");
                 View.BackgroundColor = ThemeHelpers.SplashBackgroundColor;
                 _context = new Context
                 {

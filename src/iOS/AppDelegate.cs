@@ -196,7 +196,7 @@ namespace Bit.iOS
             {
                 BackgroundColor = ThemeManager.GetResourceColor("SplashBackgroundColor").ToUIColor()
             };
-            var logo = new UIImage(ThemeHelpers.LightTheme ? "logo.PNG" : "logo_white.PNG");
+            var logo = new UIImage(ThemeHelpers.LightTheme ? "logo.png" : "logo_white.png");
             var imageView = new UIImageView(logo)
             {
                 Center = new CoreGraphics.CGPoint(view.Center.X, view.Center.Y - 30)

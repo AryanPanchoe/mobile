@@ -103,7 +103,7 @@ namespace Bit.Core.Services
                 // If user saves a self-hosted region with empty fields, default to US
                 if (selfHostedUrls.IsEmpty)
                 {
-                    Console.WriteLine("temp");
+                
                     return await SetRegionAsync(Region.vBoxx);
                 }
                 urls = selfHostedUrls.FormatUrls();

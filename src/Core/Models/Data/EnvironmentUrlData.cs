@@ -6,7 +6,7 @@ namespace Bit.Core.Models.Data
 {
     public class EnvironmentUrlData
     {
- 
+
 
         public static EnvironmentUrlData DefaultvBoxx = new EnvironmentUrlData
         {
@@ -18,6 +18,7 @@ namespace Bit.Core.Models.Data
             Notifications = "https://vault.vboxx.nl",
             Events = "https://vault.vboxx.nl",
             Domain = "vboxx.nl"
+            
         };
 
         public string Base { get; set; }
@@ -39,10 +40,15 @@ namespace Bit.Core.Models.Data
 
         public Region Region
         {
-            get
+           get
+
+            { if (Base == Region.vBoxx.BaseUrl())
+            
             {
                 return Region.vBoxx;
-
+                
+            }
+                return Region.SelfHosted;
             }
         }
         
@@ -61,7 +67,7 @@ namespace Bit.Core.Models.Data
             };
         }
 
-        private string FormatUrl(string url)
+        private string FormatUrl(string url) 
         {
             if (string.IsNullOrWhiteSpace(url))
             {
@@ -80,7 +86,7 @@ namespace Bit.Core.Models.Data
             var url = WebVault ?? Base ?? Api ?? Identity;
             if (string.IsNullOrWhiteSpace(url))
             {
-                return string.Empty;
+                return string.Empty;  
             }
             if (url.Contains(Region.vBoxx.Domain()))
             {
